@@ -68,6 +68,10 @@ ul {
   align-items: center;
 }
 
+.contacts-top li:nth-child(1) a span{
+ font-size: 12px;
+}
+
 .contacts-top li:nth-child(2) {
   padding: 0 27px 0 50px;
 }
