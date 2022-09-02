@@ -6,11 +6,13 @@
   --color-contact: rgb(117, 117, 117);
   --color-contact-transp: rgba(255, 255, 255, .6);
   --color-white: rgb(255, 255, 255);
+  --color-social: rgb(175, 177, 184);
   --color-bg-social: rgba(255, 255, 255, .1);
   --color-bg-main: rgb(47, 48, 58);
   --color-bg-section: rgb(245, 244, 250);
   --color-border: rgb(236, 236, 236);
-  --color-portfolio-element: rgb(238, 238, 238)
+  --color-portfolio-element: rgb(238, 238, 238);
+  --color-bg-icons: rgb(245, 244, 250);
 }
 
 body {
@@ -205,6 +207,20 @@ ul {
   border-radius: 4px;
 }
 
+.section:nth-child(2) ul:first-child li .icon {
+  height: 120px;
+  width: 270px;
+  background-color: var(--color-bg-icons);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.section:nth-child(2) .icon {
+  margin: auto;
+}
+
 .main-sections .section:nth-child(2) {
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -280,13 +296,50 @@ ul {
   line-height: 1.171;
   margin-top: 30px;
   margin-bottom: 10px;
+  letter-spacing: 0.03em;
 }
 
 .main-sections .section:nth-child(4) p {
   font-size: 16px;
   line-height: 1.171;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+}
+
+.main-sections .section:nth-child(5) h2 {
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin: 0 0 50px;
+}
+
+.main-sections .section:nth-child(5) ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-sections .section:nth-child(5) li {
+  border: 1px solid var(--color-social);
+  height: 92px;
+  width: 170px;
+  border-radius: 4px;
+}
+
+.main-sections .section:nth-child(5) .icon {
+  fill: var(--color-social);
+  height: 70px;
+  width: 120px;
+  margin-left: 20px;
+}
+
+.main-sections .section:nth-child(5) li:hover {
+  border: 1px solid var(--color-logo);
+  cursor: pointer;
+}
+
+.main-sections .section:nth-child(5) li:hover .icon {
+  fill: var(--color-logo);
 }
 
 .portfolio-sections .section:nth-child(1) {
@@ -360,6 +413,7 @@ ul {
 .bottom .container {
   padding-left: 15px;
   padding-top: 60px;
+  display: flex;
 }
 
 .logo-bottom {
@@ -390,27 +444,62 @@ ul {
 }
 
 .socials {
-  position: relative;
-  bottom: 210px;
-  left: 320px;
   color: var(--color-white);
   text-transform: uppercase;
+  margin-left: 70px;
+  padding-top: 12px;
+  font-size: 0;
 }
 
 .socials h4 {
   letter-spacing: 0.03em;
   line-height: 1.142;
+  margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 5px;
+  font-size: 14px;
+}
+
+.social-icons {
+  font-size: 0;
+  margin: 0 32px 30px;
+}
+
+.section:nth-child(4) .social-icon {
+  display: inline-block;
+  fill: var(--color-social);
+  background-color: var(--color-white);
 }
 
 .social-icon {
-  box-sizing: content-box;
   fill: var(--color-white);
   background-color: var(--color-bg-social);
-  padding: 10px;
-  border-radius: 50px;
-  margin-left: 6px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+
+.section:nth-child(4) .social-icon:nth-child(1) {
+  margin-left: 0;
+}
+
+.section:nth-child(4) .social-icon:nth-child(2) {
+  margin-left: 10px;
+}
+
+.social-icon:nth-child(2) {
+  margin-left: 0;
+}
+
+.social-icon use {
+  position: relative;
+  top: 50%;
+}
+
+.section:nth-child(4) .social-icon:hover {
+  fill: var(--color-white);
+  background-color: var(--color-logo);
+  cursor: pointer;
 }
 
 .social-icon:hover {
