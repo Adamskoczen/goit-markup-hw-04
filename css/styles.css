@@ -72,11 +72,6 @@ ul {
   align-items: center;
 }
 
-.contact {
-  color: var(--color-contact);
-  fill: var(--color-contact);
-}
-
 .icon {
   position: relative;
   top: 5px;
@@ -109,6 +104,11 @@ ul {
   color: var(--color-main);
   line-height: 1.173;
   letter-spacing: 0.02em;
+}
+
+.contact {
+  color: var(--color-contact);
+  fill: var(--color-contact);
 }
 
 .main-sections .section li,
