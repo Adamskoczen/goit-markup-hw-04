@@ -362,13 +362,13 @@ ul {
 }
 
 .main-sections .section:nth-child(5) li:hover,
-.main-sections .section:nth-child(5) li:focus {
+.main-sections .section:nth-child(5) a:focus li {
   border: 1px solid var(--color-logo);
   cursor: pointer;
 }
 
 .main-sections .section:nth-child(5) li:hover .icon,
-.main-sections .section:nth-child(5) li:focus .icon {
+.main-sections .section:nth-child(5) a:focus .icon {
   fill: var(--color-logo);
 }
 
@@ -523,13 +523,20 @@ ul {
   top: 50%;
 }
 
-.section:nth-child(4) .social-icon:hover {
+.section:nth-child(4) .social-icon:hover {  
   fill: var(--color-white);
   background-color: var(--color-logo);
   cursor: pointer;
 }
 
-.social-icon:hover {
+.section:nth-child(4) a:focus .social-icon {
+    fill: var(--color-white);
+    background-color: var(--color-logo);
+    cursor: pointer;
+}
+
+.social-icon:hover,
+a:focus .social-icon {
   background-color: var(--color-logo);
   cursor: pointer;
 }
@@ -540,4 +547,9 @@ ul {
 
 .socials ul li:not(:first-child) {
   margin-left: 10px;
+}
+
+.bottom .contact:hover,
+.bottom .contact:focus {
+  color: var(--color-logo);
 }
