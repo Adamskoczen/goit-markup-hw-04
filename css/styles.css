@@ -4,10 +4,10 @@
   --color-main: rgb(33, 33, 33);
   --color-black: rgb(0, 0, 0);
   --color-contact: rgb(117, 117, 117);
-  --color-contact-transp: rgba(255, 255, 255, .6);
+  --color-contact-transp: rgba(255, 255, 255, 0.6);
   --color-white: rgb(255, 255, 255);
   --color-social: rgb(175, 177, 184);
-  --color-bg-social: rgba(255, 255, 255, .1);
+  --color-bg-social: rgba(255, 255, 255, 0.1);
   --color-bg-main: rgb(47, 48, 58);
   --color-bg-section: rgb(245, 244, 250);
   --color-border: rgb(236, 236, 236);
@@ -85,8 +85,8 @@ ul {
   cursor: pointer;
 }
 
-.contacts-top li:nth-child(1) a span{
- font-size: 12px;
+.contacts-top li:nth-child(1) a span {
+  font-size: 12px;
 }
 
 .contacts-top li:nth-child(2) {
@@ -126,7 +126,8 @@ ul {
   color: var(--color-contact-transp);
 }
 
-.logo-top, .logo-bottom {
+.logo-top,
+.logo-bottom {
   font-family: "Raleway";
   text-decoration: none;
   font-size: 26px;
@@ -148,18 +149,17 @@ ul {
 .main-sections .background-img {
   width: 1600px;
   margin: 0 auto;
-  background-image: 
-  linear-gradient(
-  var(--color-header-gadient), 
-  var(--color-header-gadient)
-  ),
-  url("../images/img-header.jpg");
+  background-image: linear-gradient(
+      var(--color-header-gadient),
+      var(--color-header-gadient)
+    ),
+    url("../images/img-header.jpg");
   height: 600px;
 }
 
 .main-sections .section:nth-child(1) {
   background-color: var(--color-bg-main);
-  padding: 0; 
+  padding: 0;
 }
 
 .main-sections .section:nth-child(1) .container {
@@ -199,7 +199,8 @@ ul {
   border-radius: 4px;
 }
 
-.main-sections p, .portfolio-sections p {
+.main-sections p,
+.portfolio-sections p {
   color: var(--color-contact);
 }
 
@@ -217,7 +218,8 @@ ul {
 .portfolio-sections .section:nth-child(1) button:focus {
   color: var(--color-white);
   background-color: var(--color-logo);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -289,19 +291,29 @@ ul {
   margin-bottom: 50px;
 }
 
-.main-sections .section:nth-child(4) ul {
+.main-sections .section:nth-child(4) .team {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
 }
 
-.main-sections .section:nth-child(4) li {
+.main-sections .section:nth-child(4) .team > li {
   background-color: var(--color-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.main-sections .section:nth-child(4) .team ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.main-sections .section:nth-child(4) .team ul li:not(:first-child) {
+  margin-left: 10px;
 }
 
 .main-sections .section:nth-child(4) h4 {
@@ -399,11 +411,9 @@ ul {
 }
 
 .portfolio-sections .section:nth-child(2) li:hover {
-box-shadow: 
-0px 1px 1px rgba(0, 0, 0, 0.12), 
-0px 4px 4px rgba(0, 0, 0, 0.06), 
-1px 4px 6px rgba(0, 0, 0, 0.16);
-cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .portfolio-sections .section:nth-child(2) .portfolio-container-text {
@@ -500,15 +510,6 @@ cursor: pointer;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  margin-left: 10px;
-}
-
-.section:nth-child(4) .social-icon:nth-child(1) {
-  margin-left: 0;
-}
-
-.section:nth-child(4) .social-icon:nth-child(2) {
-  margin-left: 10px;
 }
 
 .social-icon:nth-child(2) {
@@ -529,4 +530,12 @@ cursor: pointer;
 .social-icon:hover {
   background-color: var(--color-logo);
   cursor: pointer;
+}
+
+.socials ul {
+  display: flex;
+}
+
+.socials ul li:not(:first-child) {
+  margin-left: 10px;
 }
