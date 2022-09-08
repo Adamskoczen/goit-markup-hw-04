@@ -36,6 +36,10 @@ ul {
   margin: 0;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 .container-header {
   border-bottom: 1px solid var(--color-border);
 }
@@ -111,12 +115,6 @@ ul {
   fill: var(--color-contact);
 }
 
-.main-sections .section li,
-.portfolio-sections .section li,
-.bottom li {
-  list-style-type: none;
-}
-
 .bottom .link,
 .bottom address {
   line-height: 1.714;
@@ -157,14 +155,14 @@ ul {
   height: 600px;
 }
 
-.main-sections .section:nth-child(1) {
+.main-sections .section-header {
   background-color: var(--color-bg-main);
   padding: 0;
   max-width: 1600px;
   margin: 0 auto;
 }
 
-.main-sections .section:nth-child(1) .container {
+.main-sections .section-header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,7 +173,7 @@ ul {
   padding-bottom: 200px;
 }
 
-.main-sections .section:nth-child(1) h1 {
+.main-sections .section-header h1 {
   font-size: 44px;
   line-height: 1.363;
   font-weight: 900;
@@ -187,7 +185,7 @@ ul {
   padding: 0 252px 30px;
 }
 
-.main-sections .section:nth-child(1) button {
+.main-sections .section-header button {
   font-family: "roboto";
   color: var(--color-white);
   background-color: var(--color-logo);
@@ -206,18 +204,18 @@ ul {
   color: var(--color-contact);
 }
 
-.main-sections .section:nth-child(1) button:hover,
-.portfolio-sections .section:nth-child(1) button:hover {
+.main-sections .section-header button:hover,
+.portfolio-sections .section-filter button:hover {
   cursor: pointer;
 }
 
-.main-sections .section:nth-child(1) button:hover,
-.main-sections .section:nth-child(1) button:focus {
+.main-sections .section-header button:hover,
+.main-sections .section-header button:focus {
   background-color: var(--color-logo-dark);
 }
 
-.portfolio-sections .section:nth-child(1) button:hover,
-.portfolio-sections .section:nth-child(1) button:focus {
+.portfolio-sections .section-filter button:hover,
+.portfolio-sections .section-filter button:focus {
   color: var(--color-white);
   background-color: var(--color-logo);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -225,7 +223,7 @@ ul {
   border-radius: 4px;
 }
 
-.section:nth-child(2) ul:first-child li .icon {
+.section-lorem ul:first-child li .icon {
   height: 120px;
   width: 270px;
   background-color: var(--color-bg-icons);
@@ -235,71 +233,71 @@ ul {
   justify-content: center;
 }
 
-.section:nth-child(2) .icon {
+.section-lorem .icon {
   margin: auto;
 }
 
-.main-sections .section:nth-child(2) {
+.main-sections .section-lorem {
   letter-spacing: 0.03em;
   font-size: 14px;
 }
 
-.main-sections .section:nth-child(2) ul {
+.main-sections .section-lorem ul {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
 }
 
-.main-sections .section:nth-child(2) li {
+.main-sections .section-lorem li {
   flex-basis: 270px;
 }
 
-.main-sections .section:nth-child(2) h3 {
+.main-sections .section-lorem h3 {
   font-weight: 700;
   line-height: 1.172;
   text-transform: uppercase;
 }
 
-.main-sections .section:nth-child(2) h3 {
+.main-sections .section-lorem h3 {
   margin-top: 0;
 }
 
-.main-sections .section:nth-child(2) p {
+.main-sections .section-lorem p {
   line-height: 1.714;
   margin-bottom: 0;
 }
 
-.main-sections .section:nth-child(3) {
+.main-sections .section-do {
   padding-top: 0;
 }
 
-.main-sections .section:nth-child(3) h2 {
+.main-sections .section-do h2 {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.main-sections .section:nth-child(3) ul {
+.main-sections .section-do ul {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
 }
 
-.main-sections .section:nth-child(4) {
+.main-sections .section-team {
   background-color: var(--color-bg-section);
 }
 
-.main-sections .section:nth-child(4) h2 {
+.main-sections .section-team h2 {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-.main-sections .section:nth-child(4) .team {
+.main-sections .section-team .team {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
 }
 
-.main-sections .section:nth-child(4) .team > li {
+.main-sections .section-team .team > li {
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -309,16 +307,16 @@ ul {
   align-items: center;
 }
 
-.main-sections .section:nth-child(4) .team ul {
+.main-sections .section-team .team ul {
   display: flex;
   padding-left: 0;
 }
 
-.main-sections .section:nth-child(4) .team ul li:not(:first-child) {
+.main-sections .section-team .team ul li:not(:first-child) {
   margin-left: 10px;
 }
 
-.main-sections .section:nth-child(4) h4 {
+.main-sections .section-team h4 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.171;
@@ -327,7 +325,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.main-sections .section:nth-child(4) p {
+.main-sections .section-team p {
   font-size: 16px;
   line-height: 1.171;
   margin-top: 0;
@@ -335,58 +333,58 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.main-sections .section:nth-child(5) h2 {
+.main-sections .section-clients h2 {
   line-height: 1.172;
   letter-spacing: 0.03em;
   margin: 0 0 50px;
 }
 
-.main-sections .section:nth-child(5) ul {
+.main-sections .section-clients ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
 }
 
-.main-sections .section:nth-child(5) li {
+.main-sections .section-clients li {
   border: 1px solid var(--color-social);
   height: 92px;
   width: 170px;
   border-radius: 4px;
 }
 
-.main-sections .section:nth-child(5) .icon {
+.main-sections .section-clients .icon {
   fill: var(--color-social);
   height: 70px;
   width: 120px;
   margin-left: 20px;
 }
 
-.main-sections .section:nth-child(5) li:hover,
-.main-sections .section:nth-child(5) li:focus-within {
+.main-sections .section-clients li:hover,
+.main-sections .section-clients li:focus-within {
   border: 1px solid var(--color-logo);
   cursor: pointer;
 }
 
-.main-sections .section:nth-child(5) li:hover .icon,
-.main-sections .section:nth-child(5) a:focus .icon {
+.main-sections .section-clients li:hover .icon,
+.main-sections .section-clients a:focus .icon {
   fill: var(--color-logo);
 }
 
-.portfolio-sections .section:nth-child(1) {
+.portfolio-sections .section-filter{
   padding-bottom: 50px;
 }
 
-.portfolio-sections .section:nth-child(1) ul {
+.portfolio-sections .section-filter ul {
   display: flex;
   padding-left: 0;
   justify-content: center;
 }
 
-.portfolio-sections .section:nth-child(1) li:not(:last-child) {
+.portfolio-sections .section-filter li:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-sections .section:nth-child(1) button {
+.portfolio-sections .section-filter button {
   font-family: "roboto";
   background-color: var(--color-bg-section);
   font-size: 16px;
@@ -399,11 +397,11 @@ ul {
   padding: 6px 22px;
 }
 
-.portfolio-sections .section:nth-child(2) {
+.portfolio-sections .section-grid {
   padding-top: 0;
 }
 
-.portfolio-sections .section:nth-child(2) ul {
+.portfolio-sections .section-grid ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -412,19 +410,19 @@ ul {
   font-size: 0;
 }
 
-.portfolio-sections .section:nth-child(2) li:hover {
+.portfolio-sections .section-grid li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
-.portfolio-sections .section:nth-child(2) .portfolio-container-text {
+.portfolio-sections .section-grid .portfolio-container-text {
   border-right: 1px solid var(--color-portfolio-element);
   border-left: 1px solid var(--color-portfolio-element);
   border-bottom: 1px solid var(--color-portfolio-element);
 }
 
-.portfolio-sections .section:nth-child(2) h3 {
+.portfolio-sections .section-grid h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -434,7 +432,7 @@ ul {
   margin: 0;
 }
 
-.portfolio-sections .section:nth-child(2) p {
+.portfolio-sections .section-grid p {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -500,7 +498,7 @@ ul {
   margin: 0 32px 30px;
 }
 
-.section:nth-child(4) .social-icon {
+.section-team .social-icon {
   display: inline-block;
   fill: var(--color-social);
   background-color: var(--color-white);
@@ -523,13 +521,13 @@ ul {
   top: 50%;
 }
 
-.section:nth-child(4) .social-icon:hover {  
+.section-team .social-icon:hover {  
   fill: var(--color-white);
   background-color: var(--color-logo);
   cursor: pointer;
 }
 
-.section:nth-child(4) a:focus .social-icon {
+.section-team a:focus .social-icon {
     fill: var(--color-white);
     background-color: var(--color-logo);
     cursor: pointer;
